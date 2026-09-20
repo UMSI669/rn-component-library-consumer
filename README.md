@@ -31,9 +31,6 @@ These match Expo's current blank TypeScript template. ESLint 9 is retained
 because the React plugin currently used by `eslint-config-expo` is not yet
 compatible with ESLint 10's rule API.
 
-The lockfile should be generated after replacing `OWNER`; npm cannot resolve a
-placeholder repository into the exact commit required by a lockfile.
-
 ## Two different delivery paths
 
 - npm installs component code from the Git repository and tag in `package.json`.
@@ -42,4 +39,6 @@ placeholder repository into the exact commit required by a lockfile.
 The Pages URL is documentation, not a package registry or install source.
 
 See [how the dependency works](docs/HOW-THE-DEPENDENCY-WORKS.md) and
-[troubleshooting](docs/TROUBLESHOOTING.md).
+[troubleshooting](docs/TROUBLESHOOTING.md). The library repository also contains
+a complete
+[student setup walkthrough](https://github.com/UMSI669/rn-component-library-demo/blob/main/docs/STUDENT-SETUP.md).
