@@ -1,0 +1,20 @@
+name: Verify Expo consumer
+
+on:
+  pull_request:
+  push:
+    branches: ['**']
+
+jobs:
+  verify:
+    runs-on: ubuntu-24.04
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-node@v7
+        with:
+          node-version-file: .nvmrc
+      # npm install resolves the Git tag and creates a clean dependency tree.
+      - run: npm install
+      - run: npm run typecheck
+      - run: npm run lint
+      - run: npm run export:smoke
