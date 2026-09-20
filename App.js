@@ -15,7 +15,7 @@ const audienceOptions = [
   { label: 'UX', value: 'ux' },
   { label: 'Management', value: 'management' },
   { label: 'Engineering', value: 'engineering' },
-] as const;
+];
 
 export default function App() {
   const [audience, setAudience] = useState('ux');
@@ -23,7 +23,7 @@ export default function App() {
     'No callback has fired yet.',
   );
 
-  const handleAudienceChange = (nextAudience: string) => {
+  const handleAudienceChange = (nextAudience) => {
     // Teaching note: ChoiceChips reports intent; this screen owns the value.
     setAudience(nextAudience);
     setLastCallback(`ChoiceChips selected “${nextAudience}”.`);

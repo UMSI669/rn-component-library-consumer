@@ -4,13 +4,13 @@ The application declares one ordinary dependency:
 
 ```json
 {
-  "rn-component-library-demo": "github:OWNER/rn-component-library-demo#v1.0.0"
+  "rn-component-library-demo": "github:UMSI669/rn-component-library-demo#v1.0.1"
 }
 ```
 
-During `npm install`, npm asks GitHub for the commit identified by `v1.0.0`.
-The library's root `package.json` points to committed JavaScript and TypeScript
-declarations in `dist/`. React and React Native are peers, so this app supplies
+During `npm install`, npm asks GitHub for the commit identified by `v1.0.1`.
+The library's root `package.json` points to committed JavaScript and generated
+editor declarations in `dist/`. React and React Native are peers, so this app supplies
 the framework instances used by both app and library.
 
 Application code imports from the public package boundary:

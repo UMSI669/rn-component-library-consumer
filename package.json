@@ -2,7 +2,7 @@
   "name": "rn-component-library-consumer",
   "version": "1.0.0",
   "private": true,
-  "main": "index.ts",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/UMSI669/rn-component-library-consumer.git"
@@ -15,9 +15,8 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "lint": "eslint .",
-    "typecheck": "tsc --noEmit",
     "export:smoke": "expo export --platform android --output-dir dist",
-    "verify": "npm run lint && npm run typecheck && npm run export:smoke"
+    "verify": "npm run lint && npm run export:smoke"
   },
   "dependencies": {
     "expo": "~57.0.24",
@@ -25,12 +24,10 @@
     "react": "19.2.3",
     "react-native": "0.86.3",
     "react-native-safe-area-context": "~5.7.0",
-    "rn-component-library-demo": "github:UMSI669/rn-component-library-demo#v1.0.0"
+    "rn-component-library-demo": "github:UMSI669/rn-component-library-demo#v1.0.1"
   },
   "devDependencies": {
-    "@types/react": "~19.2.2",
     "eslint": "9.39.5",
-    "eslint-config-expo": "57.0.2",
-    "typescript": "~6.0.3"
+    "eslint-config-expo": "57.0.2"
   }
 }

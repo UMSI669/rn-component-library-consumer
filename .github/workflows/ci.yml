@@ -15,6 +15,5 @@ jobs:
           node-version-file: .nvmrc
       # npm install resolves the Git tag and creates a clean dependency tree.
       - run: npm install
-      - run: npm run typecheck
       - run: npm run lint
       - run: npm run export:smoke

@@ -24,10 +24,9 @@ npm run verify
 - Expo SDK 57.0.24
 - React 19.2.3
 - React Native 0.86.3
-- TypeScript 6.0.3
 - ESLint 9.39.5 with Expo's standard configuration
 
-These match Expo's current blank TypeScript template. ESLint 9 is retained
+This is an ordinary JavaScript Expo application. ESLint 9 is retained
 because the React plugin currently used by `eslint-config-expo` is not yet
 compatible with ESLint 10's rule API.
 

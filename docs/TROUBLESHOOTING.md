@@ -6,7 +6,7 @@ Confirm that `v1.0.0` appears
 under the repository's tags. Private repositories also require GitHub access on
 the installing machine or CI runner.
 
-## TypeScript cannot find package declarations
+## The editor cannot find package information
 
 In the library repository, build and commit `dist/index.d.ts` before creating
 the tag. Then install the updated tag in this app.
